@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiworldskills", "apiworldskills\apiworldskills.csproj", "{0582C5A9-0F82-4956-8833-A639D752ABCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0582C5A9-0F82-4956-8833-A639D752ABCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0582C5A9-0F82-4956-8833-A639D752ABCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0582C5A9-0F82-4956-8833-A639D752ABCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0582C5A9-0F82-4956-8833-A639D752ABCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40BCEC63-C044-4AF1-8F6C-ACAD1C31170F}
+	EndGlobalSection
+EndGlobal
