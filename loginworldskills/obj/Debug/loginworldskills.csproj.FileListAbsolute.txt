@@ -1,0 +1,16 @@
+C:\Users\я\source\repos\loginworldskills\loginworldskills\bin\Debug\loginworldskills.exe.config
+C:\Users\я\source\repos\loginworldskills\loginworldskills\bin\Debug\loginworldskills.exe
+C:\Users\я\source\repos\loginworldskills\loginworldskills\bin\Debug\loginworldskills.pdb
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\loginworldskills.csproj.AssemblyReference.cache
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\loginworldskills.csproj.SuggestedBindingRedirects.cache
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\MainWindow.g.cs
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\App.g.cs
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\loginworldskills_MarkupCompile.cache
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\loginworldskills_MarkupCompile.lref
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\MainWindow.baml
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\loginworldskills.g.resources
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\loginworldskills.Properties.Resources.resources
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\loginworldskills.csproj.GenerateResource.cache
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\loginworldskills.csproj.CoreCompileInputs.cache
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\loginworldskills.exe
+C:\Users\я\source\repos\loginworldskills\loginworldskills\obj\Debug\loginworldskills.pdb
