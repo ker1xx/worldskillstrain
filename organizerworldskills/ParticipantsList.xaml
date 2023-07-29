@@ -1,0 +1,25 @@
+﻿<Page x:Class="organizerworldskills.ParticipantsList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:organizerworldskills"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="533"
+      Title="ParticipantsList"
+      Background="White">
+
+    <Grid>
+        <DataGrid x:Name="Competitiors">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="Agree" Click="AgreeButton_Click">Согласовать</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

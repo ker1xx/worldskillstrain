@@ -1,0 +1,52 @@
+﻿<Window x:Class="organizerworldskills.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:organizerworldskills"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <!--#region header-->
+        <Grid x:Name="header" Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="exitButton" Grid.Row="0" Grid.Column="0" Content="Выход" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15" MinWidth="50" MinHeight="20" Background="Blue" Foreground="White" FontFamily="Akrobat" Click="exitButton_Click"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="Техническая дерекция" Margin="15" FontFamily="Akrobat Bold"/>
+            <TextBlock Margin="15,35,15,15" x:Name="InfoAboutUserText" Grid.Row="0" Grid.Column="1" Text="Добрый день, Иванов Иван Иванович" FontFamily="Akrobat"/>
+            <Image Grid.Row="0" Grid.Column="2" x:Name="icon" Source="ds.png"/>
+            <ComboBox x:Name="ChampionatePicker" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Чемпионат" Background="{x:Null}" FontFamily="Akrobat" Width="300"/>
+        </Grid>
+        <!--#endregion-->
+        <!--#region main-->
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="ChampionateButton" Margin="15" Grid.Row="0" Content="Чемпионат" Foreground="White" Background="Blue" FontFamily="Akrobat"/>
+            <Button x:Name="ChampionateSettingsButton" Margin="15" Content="Настройка чемпионата" Grid.Row="1" Foreground="White" Background="Blue" FontFamily="Akrobat" Click="ChampionateSettingsButton_Click"/>
+            <Button x:Name="ExpertsManagementButton" Margin="15" Content="Управление экспертами" Grid.Row="2" Foreground="White" Background="Blue" FontFamily="Akrobat" Click="ExpertsManagementButton_Click"/>
+            <Button x:Name="ProtocolsButton" Margin="15" Content="Протоколы" Grid.Row="3" Foreground="White" Background="Blue" FontFamily="Akrobat" Click="ProtocolsButton_Click"/>
+        </Grid>
+        <!--#endregion-->
+            <Frame x:Name="ContentFrame" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" NavigationUIVisibility="Hidden" />
+    </Grid>
+</Window>
