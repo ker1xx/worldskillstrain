@@ -19,7 +19,10 @@ public partial class WorldskillsContext : DbContext
 
     public virtual DbSet<CompetitionSkill> CompetitionSkills { get; set; }
 
+    public virtual DbSet<Competitor> Competitors { get; set; }
+
     public virtual DbSet<Region> Regions { get; set; }
+
 
     public virtual DbSet<Role> Roles { get; set; }
 
@@ -28,7 +31,6 @@ public partial class WorldskillsContext : DbContext
     public virtual DbSet<SkillBlock> SkillBlocks { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
-
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -63,6 +65,24 @@ public partial class WorldskillsContext : DbContext
                 .HasColumnName("id");
             entity.Property(e => e.CompetitionId).HasColumnName("competition_id");
             entity.Property(e => e.SkillId).HasColumnName("skill_id");
+        });
+
+        modelBuilder.Entity<Competitor>(entity =>
+        {
+            entity.ToTable("competitors");
+
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("id");
+            entity.Property(e => e.DatetimeOfLogin)
+                .HasColumnType("datetime")
+                .HasColumnName("datetime of login");
+            entity.Property(e => e.Ip)
+                .HasMaxLength(15)
+                .HasColumnName("ip");
+            entity.Property(e => e.NameOfPc)
+                .HasMaxLength(50)
+                .HasColumnName("name of pc");
         });
 
         modelBuilder.Entity<Region>(entity =>
