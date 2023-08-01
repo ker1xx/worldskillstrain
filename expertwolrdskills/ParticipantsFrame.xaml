@@ -1,0 +1,26 @@
+﻿<Page x:Class="expertwolrdskills.ParticipantsFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:expertwolrdskills"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ParticipantsFrame"
+      Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="FixateListButton" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0" Content="Зафиксировать список" Background="Green" Foreground="White" FontFamily="Akrobat" FontSize="18"/>
+        <DataGrid x:Name="ListOfParticipantsGrid" Grid.Row="1" Margin="20"/>
+        <Button x:Name="AddParticipantButton" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Добавить"  FontFamily="Akrobat" Margin="15,0,0,0" MinWidth="100" Click="AddParticipantButton_Click"/>
+        <Button x:Name="EditParticipantButton" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Изменить" FontFamily="Akrobat" Margin="205,0,0,0" MinWidth="100"/>
+        <Button x:Name="DeleteParticipantButton" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Content="УДАЛИТЬ" FontFamily="Akrobat" Margin="0,0,50,0" Background="Red" Foreground="White" MinWidth="100"/>
+        <Button x:Name="SaveButton" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Сохранить" FontFamily="Akrobat" Margin="105,0,0,0" MinWidth="200"/>
+    </Grid>
+</Page>

@@ -1,0 +1,37 @@
+﻿<Page x:Class="expertwolrdskills.AddingParticipant"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:expertwolrdskills"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddingParticipant"
+      Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Akrobat" Text="Имя участника: " FontSize="18"/>
+        <TextBox x:Name="NameInput" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Akrobat" MinWidth="300" MinHeight="25" FontSize="18"/>
+        <TextBlock Grid.Row="1" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Akrobat" Text="Фамилия участника: " FontSize="18"/>
+        <TextBox x:Name="SurnameInput" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Akrobat" MinWidth="300" MinHeight="25" FontSize="18"/>
+        <TextBlock Grid.Row="2" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Akrobat" Text="Отчество участника: " FontSize="18"/>
+        <TextBox x:Name="LastnameInput" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Akrobat" MinWidth="300" MinHeight="25" FontSize="18"/>
+        <TextBlock Grid.Row="3" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Akrobat" Text="Дата рождения участника: " FontSize="18"/>
+        <TextBox x:Name="BirthDateInput" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Akrobat" MinWidth="300" MinHeight="25" FontSize="18"/>
+        <TextBlock Grid.Row="4" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Akrobat" Text="Регион участника: " FontSize="18"/>
+        <ComboBox x:Name="RegionChoiseBox" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="300" MinHeight="25" FontFamily="Akrobat" FontSize="18"/>
+        <TextBlock Grid.Row="5" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Akrobat" Text="Пол участника: " FontSize="18"/>
+        <RadioButton x:Name="Male" Margin="300,0,0,0" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Akrobat" Content="М" GroupName="sex" FontSize="18"/>
+        <RadioButton x:Name="Female" Margin="350,0,0,0" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Akrobat" Content="Ж" GroupName="sex" FontSize="18"/>
+        <Button x:Name="SaveButton" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="300" MinHeight="25" FontFamily="Akrobat" Content="Сохранить" Click="SaveButton_Click" FontSize="18"/>
+    </Grid>
+</Page>
